@@ -1,0 +1,95 @@
+*{
+    box-sizing: border-box;
+}
+
+/**
+ * Multi Select
+ */
+
+.multiselect{}
+
+
+.multiselect-wrapper{
+    position: relative;
+    margin-bottom: 15px;
+}
+
+/**
+ * Selected 
+ */
+
+.multiselect-selected{
+    border: 1px #ccc solid;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+
+
+/**
+ * DropDown
+ */
+
+.multiselect-dropdown{
+    position: absolute;
+    top: 100%;
+    border: 1px #ccc solid;
+    border-radius: 5px;
+    width: 100%;
+    padding: 15px;
+    display: none;
+    z-index: 1;
+    background: #fff;
+    
+    /* Input text */
+
+    input[type="text"]{
+        width: 100%;
+        padding: 5px 10px;
+        margin-bottom: 15px;
+    }
+
+    /* Checkbox */
+
+    input[type="checkbox"]{
+        margin-right: 0.5em;
+    }
+    
+    ul{
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    li{
+        margin: 0 0 5px 0;
+        padding: 5px 15px;
+    }
+
+
+    /* Group Label */
+
+    .multiselect-group{
+        background: #eee;
+    }
+}
+
+
+.multiselect-active .multiselect-dropdown{
+    display: block;
+}
+
+/**
+ * Hide Select if enabled
+ */
+
+.multiselect-enabled{
+    border:0!important;
+    clip:rect(0 0 0 0)!important;
+    height:1px!important;
+    margin:-1px!important;
+    overflow:hidden!important;
+    padding:0!important;
+    position: absolute!important;
+    width:1px!important;
+}
